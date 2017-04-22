@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/backend-common/backend-common.iml" filepath="$PROJECT_DIR$/backend-common/backend-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backend-system.iml" filepath="$PROJECT_DIR$/backend-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-common/src/test/test.iml" filepath="$PROJECT_DIR$/backend-common/src/test/test.iml" />
     </modules>
   </component>
 </project>
