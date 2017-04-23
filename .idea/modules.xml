@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backend-common/backend-common.iml" filepath="$PROJECT_DIR$/backend-common/backend-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend-system.iml" filepath="$PROJECT_DIR$/backend-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-web/backend-web.iml" filepath="$PROJECT_DIR$/backend-web/backend-web.iml" />
     </modules>
   </component>
 </project>
