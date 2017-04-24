@@ -1,6 +1,7 @@
 package com.backend.entity;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -27,7 +28,7 @@ public class SysLogEntity implements Serializable {
     //IP地址
     private String ip;
     //创建时间
-    private Date createDate;
+    private Date createTime;
 
     /**
      * 设置：
@@ -116,15 +117,27 @@ public class SysLogEntity implements Serializable {
     /**
      * 设置：创建时间
      */
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    public void setCreateTime(Date createDate) {
+        this.createTime = createDate;
     }
 
     /**
      * 获取：创建时间
      */
-    public Date getCreateDate() {
-        return createDate;
+    public Date getCreateTime() {
+        return createTime;
     }
 
+    @Override
+    public String toString() {
+        return "SysLogEntity{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", operation='" + operation + '\'' +
+                ", method='" + method + '\'' +
+                ", params='" + params + '\'' +
+                ", ip='" + ip + '\'' +
+                ", createDate=" + createTime +
+                '}';
+    }
 }

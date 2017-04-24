@@ -10,4 +10,12 @@
     <packaging>war</packaging>
     <description>管理后台</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.backend.system</groupId>
+            <artifactId>backend-common</artifactId>
+            <version>${backend-version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

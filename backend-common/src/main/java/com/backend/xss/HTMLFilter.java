@@ -168,8 +168,8 @@ public final class HTMLFilter {
         vNeedClosingTags = (String[]) conf.get("vNeedClosingTags");
         vDisallowed = (String[]) conf.get("vDisallowed");
         vAllowedProtocols = (String[]) conf.get("vAllowedProtocols");
-        vProtocolAtts = (String[]) conf.get("vProtocolAtts");
         vRemoveBlanks = (String[]) conf.get("vRemoveBlanks");
+        vProtocolAtts = (String[]) conf.get("vProtocolAtts");
         vAllowedEntities = (String[]) conf.get("vAllowedEntities");
         stripComment =  conf.containsKey("stripComment") ? (Boolean) conf.get("stripComment") : true;
         encodeQuotes = conf.containsKey("encodeQuotes") ? (Boolean) conf.get("encodeQuotes") : true;

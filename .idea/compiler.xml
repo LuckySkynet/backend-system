@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="backend-common" />
+        <module name="backend-shiro" />
         <module name="backend-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="backend-common" target="1.8" />
+      <module name="backend-shiro" target="1.8" />
       <module name="backend-system" target="1.8" />
       <module name="backend-web" target="1.8" />
     </bytecodeTargetLevel>

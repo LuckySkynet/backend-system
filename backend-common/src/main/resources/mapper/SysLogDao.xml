@@ -4,14 +4,16 @@
 <mapper namespace="com.backend.dao.SysLogDao">
 
     <select id="queryObject" resultType="SysLogEntity">
-        SELECT *FROM sys_log WHERE id = #{value}
+        SELECT *
+        FROM sys_log
+        WHERE id = #{value}
     </select>
 
     <select id="queryList" resultType="SysLogEntity">
         SELECT *FROM sys_log
         <where>
             <if test="key != null and key.trim() != ''">
-                `username` like CONNECT ('%', #{key},'%') or `operation` like CONNECT ('%', #{key},'%')
+                `username` like concat ('%', #{key},'%') or `operation` like concat ('%', #{key},'%')
             </if>
         </where>
         order by id desc
@@ -30,22 +32,22 @@
     </select>
 
     <insert id="save" parameterType="SysLogEntity" useGeneratedKeys="true" keyProperty="id">
-        insert into sys_log
+        INSERT INTO sys_log
         (
-        `username`,
-        `operation`,
-        `method`,
-        `params`,
-        `ip`
+            `username`,
+            `operation`,
+            `method`,
+            `params`,
+            `ip`
         )
-        values
-        (
-        #{username},
-        #{operation},
-        #{method},
-        #{params},
-        #{ip}
-        )
+        VALUES
+            (
+                #{username},
+                #{operation},
+                #{method},
+                #{params},
+                #{ip}
+            )
     </insert>
 
     <update id="update" parameterType="SysLogEntity">
@@ -61,7 +63,8 @@
     </update>
 
     <delete id="delete">
-        delete from sys_log where id = #{value}
+        DELETE FROM sys_log
+        WHERE id = #{value}
     </delete>
 
     <delete id="deleteBatch">
