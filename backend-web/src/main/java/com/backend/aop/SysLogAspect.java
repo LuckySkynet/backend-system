@@ -6,6 +6,7 @@ import com.backend.entity.SysLogEntity;
 import com.backend.service.SysLogService;
 import com.backend.utils.HttpContextUtils;
 import com.backend.utils.IPUtils;
+import com.backend.utils.ShiroUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -52,7 +53,7 @@ public class SysLogAspect {
 
         //请求的参数
         Object[] args = joinPoint.getArgs();
-        String params = JSON.toJSONString(args[0]);
+        String params = JSON.toJSONString(args);
         sysLogEntity.setParams(params);
 
         //获取request
@@ -60,8 +61,8 @@ public class SysLogAspect {
         //设置IP地址
         sysLogEntity.setIp(IPUtils.getIpAddr(request));
 
-        //TODO 用户名，通过Shiro完成用户登录功能
-        sysLogEntity.setUsername("skynet");
+        //设置用户名
+        sysLogEntity.setUsername(ShiroUtils.getUserEntity().getUsername());
         //保存系统日志
         sysLogService.save(sysLogEntity);
     }

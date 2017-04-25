@@ -1,7 +1,6 @@
 package com.backend.entity;
 
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.util.Date;
 
 /**

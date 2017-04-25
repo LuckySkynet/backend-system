@@ -81,3 +81,5 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 *.iml
+rebel-*.xml
+rebel.xml
