@@ -16,6 +16,11 @@
             <artifactId>backend-common</artifactId>
             <version>${backend-version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.backend.system</groupId>
+            <artifactId>backend-shiro</artifactId>
+            <version>${backend-version}</version>
+        </dependency>
     </dependencies>
 
 </project>

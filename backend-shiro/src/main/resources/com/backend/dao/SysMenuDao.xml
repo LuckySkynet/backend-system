@@ -79,6 +79,11 @@
     <select id="queryTotal" resultType="int">
         SELECT count(*)
         FROM sys_menu
+        <where>
+            <if test="key != null and key.trim() != ''">
+                `username` like concat('%',#{key},'%') or `operation` like concat('%',#{key},'%')
+            </if>
+        </where>
     </select>
 
     <update id="update" parameterType="SysMenuEntity">

@@ -40,7 +40,6 @@
         <property name="filterChainDefinitions">
             <value>
                 /statics/**=anon
-                /api/**=anon
                 /login.html=anon
                 /sys/login=anon
                 /captcha.jpg=anon
