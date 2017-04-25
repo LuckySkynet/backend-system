@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.backend.system</groupId>
+        <artifactId>backend-system</artifactId>
+        <version>${backend-version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>backend-web</artifactId>
+    <packaging>war</packaging>
+    <description>管理后台</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.backend.system</groupId>
+            <artifactId>backend-common</artifactId>
+            <version>${backend-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.backend.system</groupId>
+            <artifactId>backend-shiro</artifactId>
+            <version>${backend-version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

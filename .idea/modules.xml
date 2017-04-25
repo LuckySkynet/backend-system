@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/backend-common/src/test/test.iml" filepath="$PROJECT_DIR$/backend-common/src/test/test.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/backend-common/backend-common.iml" filepath="$PROJECT_DIR$/backend-common/backend-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-shiro/backend-shiro.iml" filepath="$PROJECT_DIR$/backend-shiro/backend-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-system.iml" filepath="$PROJECT_DIR$/backend-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-web/backend-web.iml" filepath="$PROJECT_DIR$/backend-web/backend-web.iml" />
+>>>>>>> ee9d5579dde07f86ab3f9977c2b507581881f5fb
     </modules>
   </component>
 </project>
