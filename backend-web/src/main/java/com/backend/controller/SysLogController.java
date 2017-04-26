@@ -36,6 +36,9 @@ public class SysLogController {
         //查询列表数据
         Query query = new Query(params);
         List<SysLogEntity> sysLogList = sysLogService.queryList(query);
+        for (SysLogEntity sysLogEntity : sysLogList) {
+            System.out.println(sysLogEntity);
+        }
         int total = sysLogService.queryTotal(query);
 
         PageUtils pageUtils = new PageUtils(total, query.getLimit(), query.getPage(), sysLogList);
