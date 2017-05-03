@@ -2,6 +2,8 @@ package com.backend.service.impl;
 
 import com.backend.dao.SysGeneratorDao;
 import com.backend.service.SysGeneratorService;
+import com.backend.utils.GenUtils;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -49,8 +51,10 @@ public class SysGeneratorServiceImpl implements SysGeneratorService {
             Map<String, String> table = queryTable(tableName);
             //查询列信息
             List<Map<String, String>> columns = queryColumns(tableName);
-
+            //生成代码
+            GenUtils.generatorCode(table,columns,zip);
         }
+        IOUtils.closeQuietly();
         return outputStream.toByteArray();
     }
 }
