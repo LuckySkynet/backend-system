@@ -13,7 +13,8 @@
     <modules>
         <module>backend-common</module>
         <module>backend-web</module>
-        <module>backend-shiro</module>  <!-- 公共管理模块 -->
+        <module>backend-shiro</module>
+        <module>backend-gen</module>  <!-- 公共管理模块 -->
 
     </modules>
 
