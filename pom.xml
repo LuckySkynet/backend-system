@@ -11,11 +11,10 @@
     <description>父模块</description>
 
     <modules>
-        <module>backend-common</module>
+        <module>backend-common</module> <!-- 公共管理模块 -->
         <module>backend-web</module>
         <module>backend-shiro</module>
-        <module>backend-gen</module>  <!-- 公共管理模块 -->
-
+        <module>backend-gen</module>
     </modules>
 
     <properties>
